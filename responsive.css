@@ -1,0 +1,143 @@
+/*responsive web layout*/
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 5em;
+    padding: 2em
+    
+}
+nav {
+    background-color: #fac5ff;
+}
+main {
+    
+}
+section {
+    padding: 1em 2em;
+}
+aside {
+    
+}
+
+article {
+    
+}
+.photoBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photoColumn {
+    flex: 50%;
+    padding: 1% .5%;
+}
+.photoColumn img {
+    width: 100%;
+}
+footer {
+    height: 3em;
+    background-color: #f3e5ef;
+    color: cornsilk;
+    clear: left;
+}
+div {
+    box-sizing: border-box;
+}
+/* ------- Mobile Phone ------- */
+@media only screen and (max-width: 600px){
+    main {
+        width: 100%;
+        background-color: rgb(247, 241, 158);
+    }
+       .specials {
+        width: 100%;
+    
+    }
+    .mainContent {
+        width: 100%;
+    }
+    .navBar {
+        
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        text-align: center;
+        line-height: 2.5em;
+        color: cornsilk;
+        text-decoration: none;
+        border-bottom: 1px solid cornsilk; 
+    }
+    .navBar a:hover {
+        background-color: #37596f;
+        color: rgb(241, 234, 163);
+    }
+    .photoColumn {
+        flex: 100%;
+    }
+}
+/* ------- End of Mobile Phone ------- */
+/* ------- Tablet and IPad ------- */
+@media only screen and (min-width: 601px){
+    main {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #ece79b;
+    }
+       .specials {
+        width: 20%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 80%;
+        float: left;
+    }
+    .navBar {
+        overflow: hidden;
+        padding: 0 10%;
+    }
+    .navBar a, .navBar a:link, .navBar a:visited {
+        display: block;
+        width: 25%;
+        float: left;
+        text-align: center;
+        line-height: 2em;
+        color: cornsilk;
+        text-decoration: none; 
+    }
+    .navBar a:hover {
+        background-color: #7ac8fc;
+        color: rgb(238, 190, 238);
+    }
+    .photoColumn {
+        width: 50%;
+    }
+}
+/* ------- End of Tablet and IPad ------- */
+/* ------- Desktop ------- */
+@media only screen and (min-width: 1000px){
+    main {
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: #fdf6fb;
+    }
+    .specials {
+        width: 30%;
+        float: left;
+    
+    }
+    .mainContent {
+        width: 70%;
+        float: left;
+    }
+    .photoColumn {
+        flex: 50%;
+    }
+    
+}
+/* ------- End of Desktop ------- */

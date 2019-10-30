@@ -1,0 +1,90 @@
+/*CSS Layout stylesheet*/
+
+body {
+    color: rgb(8, 8, 8);
+    background-color: black;
+    font-family: sans-serif;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(196, 250, 252);
+    
+    
+}
+header {
+    height: 7em;
+    padding: 2em;
+background-image: url(images/colorful\ .jpg);    
+}
+nav {
+    height: 2em;
+    background-color: rgb(137, 152, 235);
+}
+.navBar a:link, .navBar a:visited {
+    line-height: 2em;
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+}
+.navBar a:hover {
+    background-color: #efccff;
+}
+section {
+    min-height: 6em;
+    
+}
+#sideNews {
+    width: 30%;
+    float: left;
+}
+#aboutSideNews {
+    width: 25%;
+    float: left;
+}
+#content {
+    width: 70%;
+    float: right;
+    column-count: 2;
+    column-rule: 1px solid rgb(0, 0, 0);
+    column-gap: 20px;
+}
+#content h3 {
+    margin: 0;
+}
+#aboutContent {
+    width: 50%;
+    float: left;
+    column-count: 2;
+    column-rule: 1px solid rgb(0, 0, 0);
+}
+#galContent {
+    width: 50%;
+    float: left;
+}
+.textPad {
+    padding: 1em 2em;
+}
+.photoBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.photoColumn {
+    width: 50%;
+    
+}
+.photoColumn img {
+    width: 100%;
+}
+footer {
+    clear:both;
+    height: 5em;
+    color: black;
+    background-color: rgb(255, 219, 237);
+    
+}
